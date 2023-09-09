@@ -17,9 +17,9 @@ editor_options:
 
 |                                              |     |
 |----------------------------------------------|-----|
-| **Student ID Number**                        | ... |
-| **Student Name**                             | ... |
-| **BBIT 4.2 Group**                           | ... |
+| **Student ID Number**                        | 136788 |
+| **Student Name**                             | Derrick Nyaga |
+| **BBIT 4.2 Group**                           | C |
 | **BI Project Group Name/ID (if applicable)** | ... |
 
 # Setup Chunk
@@ -40,17 +40,26 @@ knitr::opts_chunk$set(
 
 ## Loading the Dataset
 
+library(readr)
+politifact_factcheck_data <- read_csv(
+  "data/politifact_factcheck_data.csv"
+)
+
 ### Source:
 
-The dataset that was used can be downloaded here: *\<provide a link\>*
+The dataset that was used can be downloaded here: *https://www.kaggle.com/datasets/rmisra/politifact-fact-check-dataset*
 
 ### Reference:
 
 *\<Cite the dataset here using APA\>\
-Refer to the APA 7th edition manual for rules on how to cite datasets: <https://apastyle.apa.org/style-grammar-guidelines/references/examples/data-set-references>*
+Misra, R. (2022, September).Politifact Fact Check Dataset.[Data set].ResearchGate. https://doi.org/10.13140/RG.2.2.29923.22566
+
 
 ```{r Dataset Loader}
 library(readr)
+politifact_factcheck_data <- read_csv(
+  "data/politifact_factcheck_data.csv"
+)
 
 # Provide the executable R code inside the various code chunks as guided by the lab work.
 ```

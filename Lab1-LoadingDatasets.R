@@ -358,6 +358,13 @@ churn_dateset <- read_csv(
 # Specify the code you have used to load your own dataset for the BI Project
 # here:
 
+
+library(readr)
+politifact_factcheck_data <- read_csv(
+  "data/politifact_factcheck_data.csv"
+)
+
+
 ## Part B ----
 # Upload *the link* to your "Lab1-LoadingDatasets.R" hosted on Github (do not
 # upload the .R file itself) through the submission link provided on
